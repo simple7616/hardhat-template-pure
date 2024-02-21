@@ -1,0 +1,17 @@
+# directories
+.coverage_artifacts
+.coverage_cache
+.coverage_contracts
+artifacts
+cache
+node_modules
+types
+
+# files
+*.env
+*.log
+.pnp.*
+bun.lockb
+coverage.json
+package-lock.json
+pnpm-lock.yaml

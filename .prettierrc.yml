@@ -1,0 +1,26 @@
+plugins:
+  - "@trivago/prettier-plugin-sort-imports"
+  - "prettier-plugin-solidity"
+printWidth: 120
+proseWrap: "always"
+singleQuote: false
+tabWidth: 2
+trailingComma: "all"
+bracketSpacing: true
+
+overrides:
+  - files: "*.sol"
+    options:
+      compiler: "^0.8.24"
+      parser: "solidity-parse"
+      tabWidth: 4
+      useTabs: false
+      bracketSpacing: false
+  - files: "*.ts"
+    options:
+      importOrder: ["<THIRD_PARTY_MODULES>", "^[./]"]
+      importOrderParserPlugins: ["typescript"]
+      importOrderSeparation: true
+      importOrderSortSpecifiers: true
+      singleQuote: true
+      parser: "typescript"
